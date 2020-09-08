@@ -1,0 +1,16 @@
+# Filename: gitignore
+# Note:     The gitignore for this repository (duh).
+
+# Ignore everything!
+*
+
+# But descend into directories.
+!*/
+
+# And mind the whitelist!
+!.gitignore
+!Makefile
+!readme.md
+
+!/bin/test.sh
+!/src/urlencoder.c
