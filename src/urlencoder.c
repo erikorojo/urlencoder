@@ -17,9 +17,7 @@
 int main() {
   char unencoded[UNENCODE_MAX] = "";
   char encoded[ENCODE_MAX] = "";
-
   fgets(unencoded, UNENCODE_MAX, stdin);
-
   size_t len = strlen(unencoded);
   for (size_t i = 0; i < len-1; i++) { // len-1 because we don't want to append the newline.
     if (unencoded[i] == ' ') {
@@ -84,8 +82,6 @@ int main() {
       strncat(encoded, &unencoded[i], 1);
     }
   }
-
   printf("%s", encoded);
-
   return 0;
 }

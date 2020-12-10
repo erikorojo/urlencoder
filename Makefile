@@ -2,11 +2,11 @@
 .PHONY        := build clean
 
 msg_info_help := "Commands: \
-				 \n  build -> build executable \
-				 \n  clean -> remove build artifact \
-				 \n  help  -> output this message \
-				 \n  run   -> run executable \
-				 \n  test  -> run test"
+				\n  build -> build executable \
+				\n  clean -> remove build artifact \
+				\n  help  -> output this message \
+				\n  run   -> run executable \
+				\n  test  -> run test"
 
 build:
 	clang -o bin/urlencode src/urlencoder.c
